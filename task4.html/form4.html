@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>signup</title>
+</head>
+<body>
+     <form name="form3" action="serverpg2" method="post">
+        <table bgcolor="silver" align="center" height="500px" width="400px" boarder=""> 
+            <tr><td><caption><h1>signup</h1></caption></td>
+            <td></td>
+            </tr>
+            <tr>
+                <td>
+                    <label for="1">First Name</label>
+                </td>
+                <br>
+                <td><input type="text" name="name1" id="1" required></td>
+            </tr>
+            <tr>
+                <td><label for="2">Last Name</label></td>
+                <br>
+                <td><input type="text" id="2" name="name2" required></td>
+            </tr>
+            <tr>
+                <td><label for="3">Screen Name</label></td>
+                <br>
+                <td><input type="text" id="3" name="name3" required></td>
+            </tr>
+             <tr>
+                <td>
+                <label for="4">Date of Birth:</label>
+                </td>
+                <br>
+                <td>
+                <input type="date" id="4" name="name4" required>
+                </td>
+            </tr>
+            <tr>
+             <td>
+                    <label>Gender</label>
+                    <br>
+             </td>
+             <td>
+                    <input type="radio" value="Male">Male
+                    <input type="radio" value="Female">Female
+                    <input type="radio" value="others">others
+                </td>
+            </tr>
+            <tr>
+                <td><label for="">Country</label></td>
+                <td><select><option value="USA">USA</option>
+                    <option value="INDIA">INDIA</option>
+                <option value="CHINA">CHINA</option></select>
+                </td>
+
+            </tr>
+             <tr>
+                <td>
+                <label for="5">e-mail</label ></td>
+                <br>
+                <td>
+                <input type="email" name="name5" id="5" required>
+                </td>
+
+            </tr>
+            <tr>
+            <td>
+                <label for="6">Phone</label>
+            </td>
+                <br>
+                <td>
+                <input type="number" id="6" name="name6" required >
+            </td>
+            </tr>
+            <tr>
+                <td><label for="7">Password</label></td>
+                <br>
+                <td><input type="password" name="password" id="7" required></td>
+            </tr>
+            <tr>
+                <td><label for="8">Password</label></td>
+                <br>
+                <td><input type="password" name="password" id="8" required></td>
+            </tr>
+            <tr>
+                <td></td>
+                <td>
+                    <input type="checkbox">I agree to the terms of use
+
+                </td>
+            </tr>
+            <tr>
+                <td></td>
+                <td>
+                    <input type="submit" required>
+                    <input type="reset">
+                </td>
+            </tr>
+        </table>
+     </form>
+
+</body>
+</html>
