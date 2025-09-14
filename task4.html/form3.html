@@ -3,89 +3,82 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Registration form</title>
+    <title>From Tags</title>
 </head>
 <body>
-    <form name="form3" action="serverpg2" method="post">
-        <table bgcolor="silver" align="center"height="500px" width="400px" boarder="">
-            <caption><h1>Registration Form</h1></caption>
+    <form name="from3" action="serverpg3" method="post">
+   
+        <table  bgcolor="silver" align="center"  boarder="" >
+            <tr><td colspan="2" align="center" ><h1>Registration Form </h1></td></tr>        
             <tr>
-                <td>
+                 <td>
                     <label for="1">First Name</label>
-                </td>
-                <br>
-                <td><input type="text" name="name1" id="1" required></td>
-            </tr>
-            <tr>
-                <td><label for="2">Last Name</label></td>
-                <br>
-                <td><input type="text" id="2" name="name2" required></td>
-            </tr>
-            <tr>
-                <td><label for="3">Nick Name</label></td>
-                <br>
-                <td><input type="text" name="name3" id="3"></td>
-            </tr>
-            <tr>
-                <td>
-                <label for="4">e-mail</label ></td>
-                <br>
-                <td>
-                <input type="email" name="name4" id="4" required>
-                </td>
+                    <br>
+                    <input type="text" id="1" name="name1" required>
+                 </td>
+                 <br><br>
+                 <td>
+                    <label for="2">Last Name</label>
+                    <br>
+                    <input type="text" id="2" name="name2" required>
+                 </td>
 
             </tr>
             <tr>
-                <td><label for="5">Password</label></td>
-                <br>
-                <td><input type="password" name="password" id="5" required></td>
-            </tr>
-             <tr>
                 <td>
-                <label for="3">Date of Birth:</label>
-                </td>
-                <br>
-                <td>
-                <input type="date" id="3" name="name3" required>
-                </td>
-            </tr>
-            <tr>
-             <td>
-                    <label>Gender</label>
+                    <label for="3">Birthday</label>
                     <br>
-             </td>
-             <td>
-                    <input type="radio" value="Male">Male
-                    <input type="radio" value="Female">Female
-                    <input type="radio" value="others">others
+                    <input type="date" id="3" name="name3" required>
                 </td>
-            </tr>
-            <tr>
-            <td>
-                <label for="5">Mobile</label>
-            </td>
-                <br>
+            
                 <td>
-                <input type="number" id="5" name="name5" required >
-            </td>
-            </tr>
-            <tr>
-                <td><label for="7">Address</label></td>
-               <td> <textarea name="Address" id="7" row="3" col="4" required>
+                    <label>Gender</label>
                 
-                </textarea>
-               </td>
+                <br>
+                    <input type="radio" id="male" name="gender" value="male" required>
+                    <label for="male">male</label>
+                    <input type="radio" id="female" name="gender" value="female" required>
+                    <label for="female">male</label>
+                    <input type="radio" id="other" name="gender" value="oother" required>
+                    <label for="other">other</label>
+
+            
+                </td>
             </tr>
+            <td>
+                <label for="4">Email</label>
+                <br>
+                <input type="email" id="4" name="name4" required>
+            </td>
+            <td>
+                <label for="5">Phone Number</label>
+                <br>
+                <input type="tel" id="5" name="name5" required >
+            </td>
+            <tr >
+            <td colspan="2">
+                <label for="7">subject</label>
+                 </td>
+            </tr>
+                 <tr >
+            <td colspan="2">
+                    <select  name="subject" id="7" style="width:100%" required>
+                    <option value="hindi">hindi</option>
+                <option value="english">english</option></select>
+                
+            
+                
+
+            </td>
+            </tr>
+            <br>
             <tr>
                 <td>
-                    <input type="submit" required>
-                </td>
-                <td>
-                    <input type="reset">
+            
+            <input type="submit"  value="submit" required>
                 </td>
             </tr>
         </table>
     </form>
-    
 </body>
 </html>

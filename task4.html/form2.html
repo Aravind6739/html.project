@@ -3,70 +3,91 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>From Tags</title>
+    <title>Registration form</title>
 </head>
 <body>
-    <form name="from1" action="serverpg1" method="post">
-   
-        <table  bgcolor="silver" align="center"  boarder="" >
-            <caption><h1>Registration Form</h1></caption>           
+    <form name="form2" action="serverpg2" method="post">
+        <table bgcolor="silver" align="center" boarder="">
+            <tr><td colspan="2" align="center">
+                <h1>Registration Form</h1></td></tr>
             <tr>
-                 <td>
+                <td>
                     <label for="1">First Name</label>
-                    <br>
-                    <input type="text" id="1" name="name1" required>
-                 </td>
-                 <br><br>
-                 <td>
-                    <label for="2">Last Name</label>
-                    <br>
-                    <input type="text" id="2" name="name2" required>
-                 </td>
-
+                </td>
+             
+                <td><input type="text" name="name1" id="1" required></td>
+            </tr>
+            <tr>
+                <td><label for="2">Last Name</label></td>
+                
+                <td><input type="text" id="2" name="name2" required></td>
+            </tr>
+            <tr>
+                <td><label for="3">Nick Name</label></td>
+                <br>
+                <td><input type="text" name="name3" id="3"></td>
             </tr>
             <tr>
                 <td>
-                    <label for="3">Birthday</label>
-                    <br>
-                    <input type="date" id="3" name="name3" required>
-                </td>
+                <label for="4">e-mail</label ></td>
+                <br>
                 <td>
+                <input type="email" name="name4" id="4" required>
+                </td>
+
+            </tr>
+            <tr>
+                <td><label for="5">Password</label></td>
+                <br>
+                <td><input type="password" name="password" id="5" required></td>
+            </tr>
+             <tr>
+                <td>
+                <label for="3">Date of Birth:</label>
+                </td>
+                <br>
+                <td>
+                <input type="date" id="3" name="name3" required>
+                </td>
+            </tr>
+            <tr>
+             <td>
                     <label>Gender</label>
                     <br>
-                    <input type="radio" value="Male" required>Male
-                    <input type="radio" value="Female" required>Female
+             </td>
+             <td>
+                    <input type="radio" value="Male" id="male" name="Gender" required>Male
+                    <input type="radio" value="Female" id="female" name="Gender" required>Female
+                    <input type="radio" value="others" id="others" name="other" required>others
                 </td>
             </tr>
+            <tr>
             <td>
-                <label for="4">Email</label>
-                <br>
-                <input type="email" id="4" name="name4" required>
+                <label for="5">Mobile</label>
             </td>
-            <td>
-                <label for="5">Phone Number</label>
                 <br>
+                <td>
                 <input type="number" id="5" name="name5" required >
-            </td>
-            <tr >
-            <td colspan="2">
-                select languge:
-                <br>
-                    <select><option value="telugu">telugu</option>
-                    <option value="hindi">hindi</option>
-                <option value="english">english</option></select>
-                <td></td><td></td>
-            
-                
-
             </td>
             </tr>
             <tr>
-                <td align="center">
-            
-            <input type="submit"  value="submit" required>
+                <td><label for="7" rowspan="5">Address</label></td>
+               <td> <textarea name="Address" id="7" row="5" col="4" required>
+                
+                </textarea>
+               </td>
+            </tr>
+            <tr>
+                <td>
+                    
+                </td>
+                <td>
+                    <input type="submit" required>
+                    <input type="reset">
                 </td>
             </tr>
         </table>
     </form>
+    
 </body>
 </html>

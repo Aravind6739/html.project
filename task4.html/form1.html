@@ -6,23 +6,22 @@
     <title>form and control tag</title>
 </head>
 <body>
-    <form name="form2" action="serverpg2" method="post">
-        <table align="center" boarder="" bgcolor="silver" >
-            <caption><h1>HTML FORM</h1></caption>
+    <form name="form1" action="serverpg1" method="post">
+        <table align="center" bgcolor="silver" cellspacing="1px">
+            <tr><td colspan="2" align="center">
+             <h1>HTML FORM</h1></td></tr>
             <tr>
                 <td>
                 <label for="1">First Name:</label>
                 </td>
-                <br>
                 <td>
-                <input type="text" id="1" name="name1" required>
+                <input type="text" id="1" name="name1" required >
                 </td>
             </tr>
             <tr>
                 <td>
                 <label for="2">Last Name:</label>
                 </td>
-                <br>
                 <td>
                     <input type="text" id="2" name="name2" required>
                 </td>
@@ -31,7 +30,6 @@
                 <td>
                 <label for="3">Date of Birth:</label>
                 </td>
-                <br>
                 <td>
                 <input type="date" id="3" name="name3" required>
                 </td>
@@ -40,22 +38,40 @@
                     <td>
                     <label for="4">Mobile Number:</label>
                     </td>
-                    <br>
+
                     <td>
                     <input type="number" required>
                 </td>
 
             </tr>
             <tr>
+                <td colspan="2">
+                    <label for="7">subject:</label>
+                 <br>
+                </td>
+            </tr>
+            <tr>
+                <td colspan="2" >
+                    <select name="subject" id="7" style="width: 100%" required>
+                        <option value="choose an option">choose an option</option>
+                        <option value="telugu">telugu</option>
+                        <option value="hindi">hindi</option>
+                        <option value="english">english</option>
+                        <option value="maths">maths</option>
+                        <option value="others">others</option>
+
+                    </select>
+                </td>
+            </tr>
+            <tr>
                 <td>
                     <input type="submit" required>
-                </td>
-                <td>
+               
                     <input type="reset">
                 </td>
             </tr>
         </table>
     </form>
-    
+    +
 </body>
 </html>
